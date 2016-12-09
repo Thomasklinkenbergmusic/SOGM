@@ -2,8 +2,11 @@ CC = g++ -g
 
 all: program
 
-program: Checkdata.o main.o
-	$(CC) -o $@ Checkdata.o main.o 
+program: Checkage.o main.o
+	$(CC) -o $@ Checkage.o main.o
+
+.cpp.o:
+	$(CC) -c $<
 
 clean:
 	rm -f *.o
