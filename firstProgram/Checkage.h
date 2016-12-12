@@ -8,6 +8,14 @@ class Checkage {
     // constructor & destructor
     Checkage();
     ~Checkage();
+
+    void setBirthdate(std::string day, std::string month, std::string year);
+    std::string getBirthdate();
+
+  private:
+    std::string day;
+    std::string month;
+    std::string year;
 };
 
 #endif
